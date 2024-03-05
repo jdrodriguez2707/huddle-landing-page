@@ -1,8 +1,39 @@
 :root {
-  --primary-background-color: hsl(257, 40%, 49%);
-  --secondary-background-color: hsl(300, 69%, 71%);
+  --primary-color: hsl(257, 40%, 49%);
+  --secondary-color: hsl(300, 69%, 71%);
   --heading-font-family: "Poppins", sans-serif;
   --body-font-family: "Open Sans", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.main-header {
+  padding: 36px;
+}
+
+.main-header__logo {
+  aspect-ratio: 264 / 65;
+  max-width: 264px;
+  width: 60%;
+}
+
+.mockups-container {
+  margin-bottom: 40px;
+}
+
+.mockups-container__illustration-mockups {
+  aspect-ratio: 709 / 506;
+}
+
+.text-container {
+  color: #fff;
 }
 
 .attribution {

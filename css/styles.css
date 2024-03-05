@@ -1,0 +1,14 @@
+:root {
+  --primary-background-color: hsl(257, 40%, 49%);
+  --secondary-background-color: hsl(300, 69%, 71%);
+  --heading-font-family: "Poppins", sans-serif;
+  --body-font-family: "Open Sans", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

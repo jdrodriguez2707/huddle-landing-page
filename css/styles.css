@@ -9,7 +9,7 @@ body {
   background-color: var(--primary-color);
   background-image: url("../images/bg-mobile.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .main-container {
@@ -114,6 +114,11 @@ body {
 }
 
 @media (width >= 760px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
+  }
+
   .main-container {
     display: flex;
     flex-direction: column;
@@ -146,6 +151,10 @@ body {
     max-width: 1920px;
   }
 
+  .main-section {
+    gap: initial;
+  }
+
   .text-container__title {
     font-size: 4rem;
   }
@@ -155,7 +164,7 @@ body {
   }
 
   .mockups-container__illustration-mockups {
-    margin: 0 auto;
+    width: 80%;
   }
 
   .text-container__description,

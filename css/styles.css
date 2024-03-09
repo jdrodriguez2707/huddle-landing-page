@@ -111,12 +111,23 @@ body {
   cursor: pointer;
 }
 
-.icon-border:hover {
-  border-color: var(--secondary-color);
+.icon-border--facebook {
+  padding: 12px;
 }
 
-.icon-border:hover .fa-brands {
-  color: var(--secondary-color);
+.icon-border--x-twitter {
+  padding: 12px 8px;
+}
+
+.icon-border--instagram {
+  padding: 12px 10px;
+}
+
+.icon-border:hover {
+  border-color: var(--secondary-color);
+  .fa-brands {
+    color: var(--secondary-color);
+  }
 }
 
 .attribution {

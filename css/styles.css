@@ -1,18 +1,23 @@
 :root {
-  --primary-color: hsl(257, 40%, 49%);
+  --primary-background-color: hsl(257, 40%, 49%);
   --secondary-color: hsl(300, 69%, 71%);
+  --text-color: #fff;
   --heading-font-family: "Poppins", sans-serif;
   --body-font-family: "Open Sans", sans-serif;
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: var(--primary-background-color);
   background-image: url("../images/bg-mobile.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
 }
 
 .main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 0 20px;
   width: 100%;
   height: 100vh;
@@ -37,6 +42,7 @@ body {
 
 .mockups-container {
   margin-bottom: 40px;
+  max-width: 480px;
 }
 
 .mockups-container__illustration-mockups {
@@ -48,7 +54,8 @@ body {
   flex-direction: column;
   gap: 20px;
   text-align: center;
-  color: #fff;
+  color: var(--text-color);
+  max-width: 660px;
 }
 
 .text-container__title {
@@ -68,12 +75,21 @@ body {
 .text-container__register-button {
   width: 200px;
   align-self: center;
-  height: 40px;
   border-radius: 36px;
   border: none;
+  -webkit-box-shadow: 5px 7px 18px -12px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 5px 7px 18px -12px rgba(0, 0, 0, 1);
+  box-shadow: 5px 7px 18px -12px rgba(0, 0, 0, 1);
   font-family: var(--body-font-family);
   font-size: 1.3rem;
-  color: var(--primary-color);
+  color: var(--primary-background-color);
+  height: 40px;
+  cursor: pointer;
+}
+
+.text-container__register-button:hover {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
 }
 
 .main-footer {
@@ -92,113 +108,27 @@ body {
   border: 1px solid #fff;
   padding: 8px;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon-border:hover {
+  border-color: var(--secondary-color);
+}
+
+.icon-border:hover .fa-brands {
+  color: var(--secondary-color);
 }
 
 .attribution {
-  font-size: 11px;
   text-align: center;
   font-family: var(--body-font-family);
   font-size: 1.1rem;
   margin-bottom: 8px;
+  color: var(--text-color);
 }
+
 .attribution__link {
   color: var(--secondary-color);
   text-decoration: none;
   cursor: pointer;
-}
-
-@media (width >= 450px) {
-  .mockups-container {
-    width: 70%;
-  }
-}
-
-@media (width >= 760px) {
-  body {
-    background-image: url("../images/bg-desktop.svg");
-    background-size: cover;
-  }
-
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .main-section {
-    flex-direction: row;
-    gap: 40px;
-  }
-
-  .mockups-container {
-    flex: 1;
-    margin-bottom: 0;
-  }
-
-  .text-container {
-    flex: 1;
-    text-align: left;
-  }
-
-  .text-container__register-button {
-    align-self: flex-start;
-  }
-}
-
-@media (width >= 1200px) {
-  .main-container {
-    padding: 0 60px;
-    max-width: 1920px;
-  }
-
-  .main-section {
-    gap: initial;
-  }
-
-  .text-container__title {
-    font-size: 4rem;
-  }
-
-  .mockups-container {
-    flex: 1.3;
-  }
-
-  .mockups-container__illustration-mockups {
-    width: 80%;
-  }
-
-  .text-container__description,
-  .text-container__register-button {
-    font-size: 1.9rem;
-  }
-
-  .icon-container {
-    justify-content: flex-end;
-  }
-
-  .icon-border {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .icon-border--facebook {
-    padding: 20px 16px;
-  }
-
-  .icon-border--x-twitter {
-    padding: 20px 12px;
-  }
-
-  .icon-border--instagram {
-    padding: 20px 14px;
-  }
-
-  .fa-xl {
-    font-size: 2rem;
-  }
-
-  .attribution {
-    font-size: 1.4rem;
-  }
 }

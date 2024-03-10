@@ -125,16 +125,16 @@ body {
 
 .icon-border:hover {
   border-color: var(--secondary-color);
-  .fa-brands {
-    color: var(--secondary-color);
-  }
+}
+
+.icon-border:hover .fa-brands {
+  color: var(--secondary-color);
 }
 
 .attribution {
   text-align: center;
   font-family: var(--body-font-family);
   font-size: 1.1rem;
-  margin-bottom: 8px;
   color: var(--text-color);
 }
 

@@ -4,6 +4,9 @@
   --text-color: #fff;
   --heading-font-family: "Poppins", sans-serif;
   --body-font-family: "Open Sans", sans-serif;
+  --large-font-size: 2rem;
+  --medium-font-size: 1.6rem;
+  --small-font-size: 1.3rem;
 }
 
 body {
@@ -60,14 +63,14 @@ body {
 
 .text-container__title {
   font-family: var(--heading-font-family);
-  font-size: 2rem;
+  font-size: var(--large-font-size);
   font-weight: 600;
   font-style: normal;
 }
 
 .text-container__description {
   font-family: var(--body-font-family);
-  font-size: 1.6rem;
+  font-size: var(--medium-font-size);
   font-weight: 400;
   font-style: normal;
 }
@@ -81,7 +84,7 @@ body {
   -moz-box-shadow: 5px 7px 18px -12px rgba(0, 0, 0, 1);
   box-shadow: 5px 7px 18px -12px rgba(0, 0, 0, 1);
   font-family: var(--body-font-family);
-  font-size: 1.3rem;
+  font-size: var(--small-font-size);
   color: var(--primary-background-color);
   height: 40px;
   cursor: pointer;
@@ -134,7 +137,8 @@ body {
 .attribution {
   text-align: center;
   font-family: var(--body-font-family);
-  font-size: 1.1rem;
+  font-size: var(--small-font-size);
+  margin-bottom: 16px;
   color: var(--text-color);
 }
 

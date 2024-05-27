@@ -62,10 +62,11 @@ body {
 }
 
 .text-container__title {
-  font-family: var(--heading-font-family);
+  font: normal 600 var(--large-font-size) var(--heading-font-family);
+  /* font-family: var(--heading-font-family);
   font-size: var(--large-font-size);
   font-weight: 600;
-  font-style: normal;
+  font-style: normal; */
 }
 
 .text-container__description {
